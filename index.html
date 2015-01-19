@@ -10,59 +10,18 @@ body{
 	margin: 0px;
 	padding:0px;
 }
-#views{
-	width: 100%;
-	padding:30px;
-}
-#sketch{
-	display: block;
-	width:400;
-	height:400;
-	float:left;
-}
-#landscape{
-	display: block;
-	width:400;
-	height:400;
-	float:right;
-}
-
-#noisecontrol{
-	width:400px;
-	margin-left: auto;
+#main{
+	width:600px;
 	margin-right: auto;
+	margin-left: auto;
+	margin-top:3em;
 }
 		</style>
 	</head>
 	<body>
-		<div id="views">
-			<canvas id="sketch"></canvas>
-			<canvas id="landscape"></canvas>
-			<div style="clear:both;"></div>
+		<div id="main">
+			<a href="perlin/perlin.html">Perlin</a>
+			<a href="vectors/vectors.html">Vectors</a>
 		</div>
-
-		<form id="noisecontrol">
-			<label>X multiplier</label>
-			<input id="xoff" type="text"></input><br>
-
-			<label>Y multiplier</label>
-			<input id="yoff" type="text"></input><br>
-
-			<label>Octaves</label>
-			<input id="octaves" type="text"></input><br>
-
-			<label>Falloff</label>
-			<input id="falloff" type="text"></input><br>
-
-			<label>Speed</label>
-			<input id="speed" type="text"></input><br>
-
-			<label>Magnitude</label>
-			<input id="mag" type="text"></input><br>
-		</form>
-
-		<script src="jquery-2.1.3.min.js"></script>
-		<script src="processing.js"></script>
-		<script src="sketch.js"></script>
 	</body>
 </html>
